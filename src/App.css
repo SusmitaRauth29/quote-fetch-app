@@ -1,0 +1,128 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  /* transition:all .3s linear 2s */
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* .wrapper{
+  background: cadetblue;
+} */
+
+div#quote-box {
+  border-radius: 3px;
+  position: relative;
+  /* width: 450px; */
+  min-width: 550px;
+  padding: 40px 50px;
+  display: table;
+  background-color: #fff;
+  min-height: max-content;
+}
+
+.quote-text {
+  text-align: center;
+  width: 450px;
+  height: auto;
+  clear: both;
+  font-weight: 500;
+  font-size: 1.75em;
+
+}
+
+.quote-text span{
+  font-size: 30px;
+  width: 450px;
+  display: flex;
+  /* color: cadetblue; */
+  font-weight: 500;
+  text-align: center;
+  line-height: initial;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+.quote-text span.hide {
+  opacity: 0;
+  pointer-events:none;
+}
+
+.quote-text svg {
+  font-size: 1em;
+  margin-right: 0.4em;
+  /* color: cadetblue; */
+}
+.quote-auther {
+  margin-top: 1rem;
+  font-size: 1em;
+  text-align: right;
+  /* color: cadetblue; */
+}
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialbuttons {
+  display: flex;
+  gap: 8px;
+}
+
+.socialbuttons a {
+  padding: 3px;
+  /* background: cadetblue; */
+  color: white;
+  font-size: 32px;
+  border-radius: 3px;
+}
+.socialbuttons a:hover{
+  opacity: .8;
+}
+button#new-quote {
+  background: cadetblue;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+button#new-quote:hover,button#new-quote:hover{
+  opacity: .8;
+  }
+
+.loadermodal svg {
+  font-size: 40px;
+}
+.loadermodal {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
