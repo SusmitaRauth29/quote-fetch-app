@@ -13,8 +13,6 @@ function App() {
   const [loadind,setLoading]=useState(false)
   const [color,setColor]=useState()
 
- 
-  
 
   const newjoke = () => {
   setLoading(true)
